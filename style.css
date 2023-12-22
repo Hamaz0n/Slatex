@@ -88,3 +88,11 @@ button{
 button:hover{
     box-shadow: 0 0 0 10px #FFDAB3, 0 0 0 15px white;
 }
+
+header_text{
+    box-shadow: 0px 2.5px 0px 0px white;
+}
+
+header_text:hover{
+    box-shadow: 0px 2.5px 0px 0px white, 0px 2.5px 0px 100% white;
+}
