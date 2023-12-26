@@ -10,35 +10,58 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            renderMathInElement(document.body, {
+              // customised options
+              // • auto-render specific keys, e.g.:
+              delimiters: [
+                  {left: '$$', right: '$$', display: true},
+                  {left: '$', right: '$', display: false},
+                  {left: '\\(', right: '\\)', display: false},
+                  {left: '\\[', right: '\\]', display: true}
+              ],
+              // • rendering keys, e.g.:
+              throwOnError : false
+            });
+        });
+    </script>
     <script src="main.js"></script>
     <title>Home</title>
 </head>
 <body>
     <header class = "header">
         <div class = "inner_header">
-            <div id="MathText"> \text{S}\small{\LaTeX}</div>
-            <div class = "inner_header" style = "font-size:25px;">
-                <div id="MathText" class = "header_text">\text{Contact}</div>
-                <div id="MathText" class = "header_text">\text{Support}</div>
-                <div id="MathText" class = "header_text">\text{Github}</div>
+            <div> $\text{S}\small{\LaTeX}$</div>
+            <div class = "inner_header" style = "font-size:0.5em;">
+                <div class = "header_text">$\text{Contact}$</div>
+                <div class = "header_text">$\text{Support}$</div>
+                <div class = "header_text"> $\text{About}$</div>
             </div>
         </div>
     </header>
-    <div style="width: 100%;height:55svh;">
-        <div class = "backgroundImage">
-            <div class = "blur">
-                <div class = "blurText">
-                    <h2 id = "MathText">\text{The \textbf{Fanciest} scratchwork on the internet}</h2>
-                    <br>
-                    <br>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab quod, vero, porro unde officia cumque vel exercitationem </p>
-                </div>
-            </div>
+
+
+    <div class="title_container">
+        <div class = "title">
+                <h1>The $\textbf{Fanciest}$ scratchwork on the internet</h1>
+                <p>The only site you will need for $\TeX$. Take notes, make presentations, draw diagrams, and more all on one application.</p>
         </div>
     </div>
-    <div class = "button_box">
-        <button type="button" id = "MathText">\text{New}</button>
-        <button type="button" id = "MathText">\text{Open}</button>
+
+    <div class = "button_box_container">
+        <div class = "button_box">
+            <div class = "button_grid">
+                <button type="button"><i style="font-size:24px" class="fa">&#xf019;</i> Download</button>
+                <button type="button"><i style="font-size:24px" class="fa">&#xf0c2;</i> Online</button>
+                <button type="button"><i class="fa">&#xf09b;</i> Github</button>
+            </div>
+            <div style="border-left: 0.35vw solid white; height: 80%"></div>
+            <div class = "button_text">
+                <p>$\text{S}\small{\LaTeX}$ is built solely off of C++ and the SDL2 Library. The project is open source and can be found on <i class="fa">&#xf09b;</i> Github here. There is also a web version available but the files must be sinked with either Google Drive or DropBox.</p>
+            </div>
+        </div>
     </div>
 </body>
 </html>
