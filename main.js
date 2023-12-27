@@ -29,3 +29,7 @@ function isMobile() {
         document.getElementsByClassName("button_text").item(0).style.fontSize = "3.5vw";
     }
 });
+
+function githubButton() {
+    location.href = "https://github.com/Hamaz0n/Slatex";
+}
