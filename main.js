@@ -14,13 +14,16 @@ function isMobile() {
     });
   }
   document.addEventListener("DOMContentLoaded", function() {
-    if (!(isMobile())) {
-        var elements = document.getElementsByClassName("title");
-        for (var i = 0; i < elements.length;i++){
-            elements.item(i).style.fontSize = "1.5rem";
+
+      
+      
+      if (!(isMobile())) {
+          var elements = document.getElementsByClassName("title");
+          for (var i = 0; i < elements.length;i++){
+              elements.item(i).style.fontSize = "1.5rem";
+            }
         }
-    }
-    else{
+        else{
         document.getElementsByClassName("title_container").item(0).style.height = "40vh";
         let buttons = document.getElementsByTagName("button");
         for (var i = 0; i < buttons.length; i++){
@@ -30,6 +33,9 @@ function isMobile() {
     }
 });
 
-function githubButton() {
-    location.href = "https://github.com/Hamaz0n/Slatex";
-}
+
+function gitButton(event) {
+    if (event.button === 0 || event.button === 1){
+        location.href = "https://github.com/Hamaz0n/Slatex";
+    }
+};
