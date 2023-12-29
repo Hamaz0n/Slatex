@@ -35,7 +35,17 @@ function isMobile() {
 
 
 function gitButton(event) {
-    if (event.button === 0 || event.button === 1){
+    if (event.button === 0){
         location.href = "https://github.com/Hamaz0n/Slatex";
+    } else if (event.button === 1){
+        window.open("https://github.com/Hamaz0n/Slatex", '_blank').focus();
     }
 };
+
+function contact_button(event){
+    if (event.button === 0){
+        location.href = "contact/contact-page.html";
+    } else if (event.button === 1){
+        window.open("contact/contact-page.html", '_blank').focus();
+    }
+}

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="contact-page.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV" crossorigin="anonymous">
     <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js" integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8" crossorigin="anonymous"></script>
     <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js" integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05" crossorigin="anonymous"></script>
@@ -27,41 +27,49 @@
             });
         });
     </script>
-    <script src="main.js"></script>
-    <title>Slatex</title>
+    <script src="contact-page.js"></script>
+    <title>About</title>
 </head>
 <body>
     <header class = "header">
         <div class = "inner_header">
             <div> $\text{S}\small{\LaTeX}$</div>
             <div class = "inner_header" style = "font-size:0.5em;">
-                <div onmousedown="contact_button(event)"  class = "header_text">$\text{Contact}$</div>
-                <div class = "header_text">$\text{Support}$</div>
-                <div onmousedown="contact_button(event)" class = "header_text"> $\text{About}$</div>
+                <div onmousedown="home_button(event)"  class = "header_text">$\impliedby\text{Home}$</div>
             </div>
         </div>
     </header>
 
 
-    <div class="title_container">
-        <div class = "title">
-                <h1>The $\textbf{Fanciest}$ scratchwork on the internet</h1>
-                <p>The only site you will need for $\TeX$. Take notes, make presentations, draw diagrams, and more all on one application.</p>
+    <div class="p_container">
+        <div style = "width: 40vw">
+            <h1>About:</h1>
+            <br>
+            <p>$\text{S}\small{\LaTeX}$ is an interactive $\TeX$ editor built off of C++ and the SDL2 library. It's designed as a user friendly application for creating presentations and documents with $\TeX$. The application is free and open source and constantly being developed. Feel free to contribute to the project on its <a href="https://github.com/Hamaz0n/Slatex">Github</a>.</p>
+        </div>
+
+        <div class = "Images">
+            <img src="../resources/C++_logo.png">
+            <img src="../resources/SDL_Logo.png">
         </div>
     </div>
 
-    <div class = "button_box_container">
-        <div class = "button_box">
-            <div class = "button_grid">
-                <button type="button"><i style="font-size:24px" class="fa">&#xf019;</i> Download</button>
-                <button type="button"><i style="font-size:24px" class="fa">&#xf0c2;</i> Online</button>
-                <button onmousedown="gitButton(event)" type="button"><i class="fa">&#xf09b;</i> Github</button>
-            </div>
-            <div style="border-left: 0.35vw solid white; height: 80%"></div>
-            <div class = "button_text">
-                <p>$\text{S}\small{\LaTeX}$ is built solely off of C++ and the SDL2 Library. The project is open source and can be found on <i class="fa">&#xf09b;</i> Github here. There is also a web version available but the files must be sinked with either Google Drive or DropBox.</p>
-            </div>
+    <div style = "display: flex; width: 100vw; height: 1vh; justify-content: center;"> <div style = "background-color: #331A00; width:90vw; height: 0.5vh;"></div></div>
+
+    <div class="p_container" style="justify-content: flex-start; padding-left: 12.5vw;">
+        <div style = "width: 40vw">
+            <h1>Contact:</h1>
+            <br>
+            <p>Currently $\text{S}\small{\LaTeX}$ is being run by just me at the moment, so to conact me, please contact me at either:</p>
+            <br>
+            <ul>
+                <li>- Email: khamzat244@gmail.com</li>
+                <li>- Phone: (717)-343-7762</li>
+            </ul>
+            <br>
+            <p>Keep in mind that responding might take a while due to me being the only person operating the site. Any technical problems and or questions may be sent in the <b>Support</b> form that is checked once a week. I apoligize for any inconvenience caused by this delay.</p>
         </div>
     </div>
+
 </body>
 </html>
